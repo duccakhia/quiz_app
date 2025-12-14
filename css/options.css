@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Căn giữa logo và menu theo chiều ngang */
+  align-items: center; /* Căn giữa logo và menu theo chiều dọc */
+  padding: 20px 100px;
+  /* background-color: black; */
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding-right: 30px;
+}
+.navbar .menu li a {
+  position: relative;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/hinh-nen-powerpoint\ -quan-doi-viet-nam-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.logo1 img {
+  width: 100px;
+  height: auto;
+  /* justify-content: flex-start; */
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: black; /* Màu gạch chân */
+  bottom: -5px; /* Vị trí dưới chữ */
+  left: 0;
+  transform: scaleX(0); /* Bắt đầu ẩn */
+  transform-origin: bottom right;
+  transition: transform 0.5s ease; /* Hiệu ứng mượt */
+}
+.menu a:hover::after {
+  transform: scaleX(1); /* Hiện gạch chân khi hover */
+  transform-origin: bottom left;
+}
+.options h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  text-shadow: 3px 2px 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#feedback {
+  display: block;
+  margin: 50px auto;
+  width: 60%;
+  height: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  resize: none;
+}
+.button-btn {
+  display: block;
+  margin: 0 auto 50px auto;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #000000;
+  width: 150px;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(3, 118, 241, 0.25);
+  cursor: pointer;
+}
+.button-btn:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}

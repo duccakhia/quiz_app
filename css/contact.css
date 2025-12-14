@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/hinh-nen-powerpoint\ -quan-doi-viet-nam-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Căn giữa logo và menu theo chiều ngang */
+  align-items: center; /* Căn giữa logo và menu theo chiều dọc */
+  padding: 20px 100px;
+  /* background-color: black; */
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding-right: 30px;
+}
+.navbar .menu li a {
+  position: relative;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: black; /* Màu gạch chân */
+  bottom: -5px; /* Vị trí dưới chữ */
+  left: 0;
+  transform: scaleX(0); /* Bắt đầu ẩn */
+  transform-origin: bottom right;
+  transition: transform 0.5s ease; /* Hiệu ứng mượt */
+}
+.logo1 img {
+  width: 130px;
+  height: auto;
+  /* justify-content: flex-start; */
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: black; /* Màu gạch chân */
+  bottom: -5px; /* Vị trí dưới chữ */
+  left: 0;
+  transform: scaleX(0); /* Bắt đầu ẩn */
+  transform-origin: bottom right;
+  transition: transform 0.5s ease; /* Hiệu ứng mượt */
+}
+.menu a:hover::after {
+  transform: scaleX(1); /* Hiện gạch chân khi hover */
+  transform-origin: bottom left;
+}

@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/hinh-nen-powerpoint\ -quan-doi-viet-nam-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Căn giữa logo và menu theo chiều ngang */
+  align-items: center; /* Căn giữa logo và menu theo chiều dọc */
+  padding: 20px 100px;
+  /* background-color: black; */
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding-right: 30px;
+  align-items: center;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+#userLogin {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+/* dropdown styles (separate from .menu block) */
+
+.logo1 img {
+  width: 100px;
+  height: auto;
+  /* justify-content: flex-start; */
+}
+.title__main {
+  font-size: 4rem; /* chỉnh kích thước chữ lớn */
+  font-weight: 900; /* độ đậm */
+  text-align: center; /* căn giữa */
+  text-transform: uppercase; /* Viết hoa toàn bộ */
+  text-shadow: 0 0 15px #ffffff99; /* hiệu ứng sáng bên ngoài */
+  margin-top: 100px; /* khoảng cách từ trên xuống */
+}
+.button-btn {
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  border: 2px solid #000000;
+  width: 150px;
+  border-radius: 15px;
+  transform: scale(1);
+  background: #fc547d;
+  background: linear-gradient(to top, #fc547d 0%, #cfc38f 65%);
+
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.25);
+  cursor: pointer;
+}
+.button-btn:hover {
+  transform: scale(1.2);
+  transform: translateY(-3px);
+  box-shadow: 2px 6px 12px rgba(0, 123, 255, 0.3);
+}
+.title__main h1 {
+  text-shadow: 2px 1px 3px;
+  font-size: 8rem;
+  line-height: 15rem;
+}
+.title__main h5 {
+  text-shadow: 1px 1px 2px;
+  font-size: 3rem;
+}

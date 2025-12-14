@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+img {
+  width: 10rem;
+  height: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.main__content .question1 {
+  font-size: 5rem;
+}
